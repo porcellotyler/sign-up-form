@@ -1,0 +1,141 @@
+/* #container {
+    display: flex;
+} */
+
+@font-face {
+    font-family: OdinFont;
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.leftSide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 34vw;
+    height: 100vh;
+}
+
+.leftSide img {
+    height: 100%;
+    width: 100%;
+}
+
+#background {
+    z-index: -1;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65.55vw;
+    height: 100vh;
+}
+
+.logoBody {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 25%;
+}
+
+.logoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: OdinFont;
+    color: white;
+    font-size: 48px;
+}
+
+.credits {
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+#creditLinks {
+    color: white;
+}
+
+.topPara, .formDiv, .bottomInfo {
+    padding: 1rem;
+}
+
+.bottomInfo, .topPara {
+    padding-left: 2rem;
+}
+
+.formDiv {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 3px grey;
+}
+
+.formOrganizer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    border: none;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+input {
+    width: 17rem;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 1px 1px 3px grey;
+}
+
+label {
+    font-size: 10px;
+    color: rgb(53, 52, 52);
+    padding-bottom: 3px;
+}
+
+button {
+    background: #596D48;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    padding: 10px 40px;
+    margin-top: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.altPath {
+    font-size: 12px;
+    padding-top: 18px;
+}
